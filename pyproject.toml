@@ -1,0 +1,20 @@
+[project]
+name = "opinion_heimer"
+authors = [
+    { name = "jam", email = "kuttypjamsheer@gmail.com"}
+]
+description = "Opinion Heimer is your digital haven for lively discussions, polls, and the vibrant exchange of opinions. Just like \'heim\' suggests a place of gathering, our app is your virtual home for expressing thoughts, casting votes, and connecting with others who share your curiosity. Dive into a world where diverse perspectives unite, making every opinion feel at home. Join the conversation, cast your vote, and let your voice resonate in the Opinion Heimer community!"
+requires-python = ">=3.10"
+readme = "README.md"
+dynamic = ["version"]
+dependencies = [
+    # "frappe~=15.0.0" # Installed and managed by bench.
+]
+
+[build-system]
+requires = ["flit_core >=3.4,<4"]
+build-backend = "flit_core.buildapi"
+
+# These dependencies are only installed when developer mode is enabled
+[tool.bench.dev-dependencies]
+# package_name = "~=1.1.0"
