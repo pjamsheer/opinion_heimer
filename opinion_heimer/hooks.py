@@ -1,7 +1,7 @@
 app_name = "opinion_heimer"
 app_title = "Opinion Heimer"
 app_publisher = "jam"
-app_description = "Opinion Heimer is your digital haven for lively discussions, polls, and the vibrant exchange of opinions. Just like \\\'heim\\\' suggests a place of gathering, our app is your virtual home for expressing thoughts, casting votes, and connecting with others who share your curiosity. Dive into a world where diverse perspectives unite, making every opinion feel at home. Join the conversation, cast your vote, and let your voice resonate in the Opinion Heimer community!"
+app_description = "Opinoin H"
 app_email = "kuttypjamsheer@gmail.com"
 app_license = "mit"
 # required_apps = []
