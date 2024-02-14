@@ -1,0 +1,124 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "naming_series:",
+ "creation": "2023-12-22 17:26:39.265705",
+ "default_view": "List",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "naming_series",
+  "title",
+  "subject",
+  "column_break_wdwrg",
+  "options",
+  "section_break_5xqfy",
+  "is_private_poll",
+  "is_live_poll",
+  "is_anonymous_poll",
+  "column_break_qvjo3",
+  "users",
+  "mark_opinion_section",
+  "mark_opinion_html"
+ ],
+ "fields": [
+  {
+   "fieldname": "naming_series",
+   "fieldtype": "Select",
+   "label": "Series",
+   "options": "POLL-.YY.-.MM.-"
+  },
+  {
+   "fieldname": "subject",
+   "fieldtype": "Small Text",
+   "label": "Subject"
+  },
+  {
+   "default": "1",
+   "fieldname": "is_private_poll",
+   "fieldtype": "Check",
+   "label": "Is Private Poll"
+  },
+  {
+   "default": "1",
+   "depends_on": "is_private_poll",
+   "fieldname": "is_live_poll",
+   "fieldtype": "Check",
+   "label": "Is Live Poll"
+  },
+  {
+   "default": "0",
+   "fieldname": "is_anonymous_poll",
+   "fieldtype": "Check",
+   "label": "Is Anonymous Poll"
+  },
+  {
+   "fieldname": "options",
+   "fieldtype": "Table",
+   "label": "Options",
+   "options": "Poll Options",
+   "reqd": 1
+  },
+  {
+   "fieldname": "title",
+   "fieldtype": "Data",
+   "label": "Title"
+  },
+  {
+   "fieldname": "column_break_wdwrg",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "section_break_5xqfy",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "column_break_qvjo3",
+   "fieldtype": "Column Break"
+  },
+  {
+   "depends_on": "is_private_poll",
+   "description": "If no users selected in the poll will be open to all users in the system",
+   "fieldname": "users",
+   "fieldtype": "Table MultiSelect",
+   "label": "Users",
+   "options": "Poll User"
+  },
+  {
+   "fieldname": "mark_opinion_section",
+   "fieldtype": "Section Break",
+   "label": "Mark Opinion"
+  },
+  {
+   "fieldname": "mark_opinion_html",
+   "fieldtype": "HTML",
+   "label": "Mark Opinion HTML"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2023-12-31 12:41:35.748691",
+ "modified_by": "Administrator",
+ "module": "Opinion Heimer",
+ "name": "Poll",
+ "naming_rule": "By \"Naming Series\" field",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

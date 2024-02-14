@@ -1,0 +1,99 @@
+{
+ "actions": [],
+ "autoname": "naming_series:",
+ "creation": "2023-12-22 17:32:54.903900",
+ "default_view": "List",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "naming_series",
+  "poll",
+  "subject",
+  "column_break_hqtp0",
+  "is_private_poll",
+  "is_live_poll",
+  "is_anonymous_poll",
+  "section_break_9umjr",
+  "opinion"
+ ],
+ "fields": [
+  {
+   "fieldname": "naming_series",
+   "fieldtype": "Select",
+   "label": "Series",
+   "options": "OPN-.YY.-.MM.-"
+  },
+  {
+   "fieldname": "poll",
+   "fieldtype": "Link",
+   "label": "Poll",
+   "options": "Poll"
+  },
+  {
+   "fetch_from": "poll.subject",
+   "fieldname": "subject",
+   "fieldtype": "Small Text",
+   "label": "Subject"
+  },
+  {
+   "default": "1",
+   "fetch_from": "poll.is_private_poll",
+   "fieldname": "is_private_poll",
+   "fieldtype": "Check",
+   "label": "Is Private Poll"
+  },
+  {
+   "default": "1",
+   "fetch_from": "poll.is_live_poll",
+   "fieldname": "is_live_poll",
+   "fieldtype": "Check",
+   "label": "Is Live Poll"
+  },
+  {
+   "default": "0",
+   "fetch_from": "poll.is_anonymous_poll",
+   "fieldname": "is_anonymous_poll",
+   "fieldtype": "Check",
+   "label": "Is Anonymous Poll"
+  },
+  {
+   "fieldname": "opinion",
+   "fieldtype": "Data",
+   "label": "Opinion"
+  },
+  {
+   "fieldname": "column_break_hqtp0",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "section_break_9umjr",
+   "fieldtype": "Section Break"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2023-12-30 15:03:58.292804",
+ "modified_by": "Administrator",
+ "module": "Opinion Heimer",
+ "name": "Opinion",
+ "naming_rule": "By \"Naming Series\" field",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

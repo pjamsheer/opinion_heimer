@@ -1,0 +1,32 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2023-12-22 17:42:38.550672",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "option"
+ ],
+ "fields": [
+  {
+   "fieldname": "option",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Option",
+   "reqd": 1
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "istable": 1,
+ "links": [],
+ "modified": "2023-12-30 15:02:23.218731",
+ "modified_by": "Administrator",
+ "module": "Opinion Heimer",
+ "name": "Poll Options",
+ "owner": "Administrator",
+ "permissions": [],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}
