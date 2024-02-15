@@ -12,10 +12,10 @@
   "subject",
   "column_break_hqtp0",
   "is_private_poll",
-  "is_live_poll",
   "is_anonymous_poll",
   "section_break_9umjr",
-  "opinion"
+  "opinion",
+  "source"
  ],
  "fields": [
   {
@@ -44,13 +44,6 @@
    "label": "Is Private Poll"
   },
   {
-   "default": "1",
-   "fetch_from": "poll.is_live_poll",
-   "fieldname": "is_live_poll",
-   "fieldtype": "Check",
-   "label": "Is Live Poll"
-  },
-  {
    "default": "0",
    "fetch_from": "poll.is_anonymous_poll",
    "fieldname": "is_anonymous_poll",
@@ -69,11 +62,19 @@
   {
    "fieldname": "section_break_9umjr",
    "fieldtype": "Section Break"
+  },
+  {
+   "description": "The source can be \"Realtime Opinion\", \"Desk Form\", \"My Opinion Button\", \"WhatsApp\", \"Telegram\", \"Web Portal\" or etc.",
+   "fieldname": "source",
+   "fieldtype": "Data",
+   "label": "Source",
+   "read_only": 1
   }
  ],
+ "in_create": 1,
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2023-12-30 15:03:58.292804",
+ "modified": "2024-02-15 15:51:38.134337",
  "modified_by": "Administrator",
  "module": "Opinion Heimer",
  "name": "Opinion",
