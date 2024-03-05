@@ -15,12 +15,10 @@
   "options",
   "section_break_5xqfy",
   "is_private_poll",
-  "is_live_poll",
   "is_anonymous_poll",
+  "mark_my_opinion",
   "column_break_qvjo3",
-  "users",
-  "mark_opinion_section",
-  "mark_opinion_html"
+  "users"
  ],
  "fields": [
   {
@@ -39,13 +37,6 @@
    "fieldname": "is_private_poll",
    "fieldtype": "Check",
    "label": "Is Private Poll"
-  },
-  {
-   "default": "1",
-   "depends_on": "is_private_poll",
-   "fieldname": "is_live_poll",
-   "fieldtype": "Check",
-   "label": "Is Live Poll"
   },
   {
    "default": "0",
@@ -86,19 +77,19 @@
    "options": "Poll User"
   },
   {
-   "fieldname": "mark_opinion_section",
-   "fieldtype": "Section Break",
-   "label": "Mark Opinion"
-  },
-  {
-   "fieldname": "mark_opinion_html",
-   "fieldtype": "HTML",
-   "label": "Mark Opinion HTML"
+   "fieldname": "mark_my_opinion",
+   "fieldtype": "Button",
+   "label": "Mark My Opinion"
   }
  ],
  "index_web_pages_for_search": 1,
- "links": [],
- "modified": "2023-12-31 12:41:35.748691",
+ "links": [
+  {
+   "link_doctype": "Opinion",
+   "link_fieldname": "poll"
+  }
+ ],
+ "modified": "2024-02-15 15:42:15.398044",
  "modified_by": "Administrator",
  "module": "Opinion Heimer",
  "name": "Poll",
